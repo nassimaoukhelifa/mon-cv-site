@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f8fa;
+  background-color: #ffffff;
   color: #333;
   scroll-behavior: smooth;
 }
@@ -19,6 +19,16 @@ header.hero {
 .overlay {
   position: relative;
   z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 nav.navbar {
@@ -50,10 +60,14 @@ nav.navbar a.active {
   padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 .section.dark {
-  background-color: #eef3f7;
+  background-color: #f9f9f9;
 }
 
 h2 {
