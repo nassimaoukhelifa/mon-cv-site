@@ -1,39 +1,125 @@
+/* Style global */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f9fc;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f7fa;
   color: #333;
+  line-height: 1.6;
 }
 
-header, footer {
-  background-color: #003366;
+header.hero {
+  background: linear-gradient(to right, #2c3e50, #3498db);
   color: white;
-  padding: 20px;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header.hero .overlay {
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+nav.navbar {
+  background-color: #007acc;
+  padding: 12px;
   text-align: center;
 }
 
-nav {
-  background-color: #005baa;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
+nav.navbar a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-section {
-  padding: 20px;
+nav.navbar a:hover {
+  color: #ffd700;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section.dark {
+  background-color: #eef4fb;
 }
 
 h2 {
-  color: #005baa;
+  color: #007acc;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+ul.skills li {
+  margin-bottom: 10px;
+}
+
+.experience {
+  background-color: white;
+  border-left: 5px solid #007acc;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  animation: fadeSlide 1s ease forwards;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.experience h3 {
+  margin-top: 0;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-download:hover {
+  background-color: #005f99;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007acc;
+  color: white;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  nav.navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .btn-download {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+  }
 }
