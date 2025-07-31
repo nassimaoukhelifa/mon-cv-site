@@ -1,3 +1,97 @@
+/* Style global */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header.hero {
+  background: linear-gradient(to right, #007acc, #00b4db);
+  color: white;
+  text-align: center;
+  padding: 100px 20px 60px;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+nav.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav.navbar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav.navbar a:hover,
+nav.navbar a.active {
+  background-color: #e6f2f8;
+  border-bottom: 2px solid #007acc;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section.dark {
+  background-color: #eef3f7;
+}
+
+h2 {
+  text-align: center;
+  color: #007acc;
+  margin-bottom: 40px;
+}
+
+ul.skills {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007acc;
+  color: white;
+  margin-top: 40px;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #005e99;
+}
+
 .projets-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -9,12 +103,13 @@
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projet:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .projet img {
@@ -32,6 +127,7 @@
 .projet p {
   margin: 0 15px 15px;
   font-size: 0.95em;
+  color: #555;
 }
 
 .profile-photo {
@@ -60,6 +156,7 @@
   nav.navbar a {
     display: block;
     margin: 10px 0;
+    text-align: center;
   }
 
   .btn-download {
