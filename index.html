@@ -7,35 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".navbar a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      if (scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
-
 <body>
   <header class="hero">
     <div class="overlay">
       <div class="profile-photo">
-  <img src="photo-nassima.jpg" alt="Nassima Oukhelifa">
-</div>
-
+        <img src="photo-nassima.jpg" alt="Nassima Oukhelifa">
+      </div>
       <h1>Nassima Oukhelifa</h1>
       <p>Consultante Data | Power BI | Storytelling Visuel | Analyse Financière</p>
     </div>
@@ -145,26 +122,47 @@
       </ul>
     </section>
 
-<section id="contact" class="section dark">
-  <h2>Contact</h2>
-  <p>Email : <a href="mailto:nassima.oukhelifa@example.com">nassima.oukhelifa@example.com</a></p>
-<p>
-  <img src="https://img.icons8.com/color/24/linkedin.png" alt="LinkedIn" style="vertical-align: middle; margin-right: 6px;">
-  <a href="https://www.linkedin.com/in/nassima-oukhelifa/" target="_blank" rel="noopener noreferrer">
-    linkedin.com/in/nassima-oukhelifa
-  </a>
-</p>
-<p>
-    <a href="Nassima_Oukhelifa_CV_Consultante_Data.pdf" download class="btn-download">
-      📄 Télécharger mon CV en PDF
-    </a>
-  </p>
-</section>
-
+    <section id="contact" class="section dark">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:nassima.oukhelifa@example.com">nassima.oukhelifa@example.com</a></p>
+      <p>
+        <img src="https://img.icons8.com/color/24/linkedin.png" alt="LinkedIn" style="vertical-align: middle; margin-right: 6px;">
+        <a href="https://www.linkedin.com/in/nassima-oukhelifa/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/nassima-oukhelifa
+        </a>
+      </p>
+      <p>
+        <a href="Nassima_Oukhelifa_CV_Consultante_Data.pdf" download class="btn-download">
+          📄 Télécharger mon CV en PDF
+        </a>
+      </p>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Nassima Oukhelifa – Portfolio Data & BI</p>
   </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
