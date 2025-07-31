@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f7f9fc;
   margin: 0;
   padding: 0;
   color: #333;
@@ -34,5 +34,6 @@ h2 {
 }
 
 ul {
-  list-style: square;
+  list-style-type: square;
+  padding-left: 20px;
 }
