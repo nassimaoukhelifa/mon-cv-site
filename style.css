@@ -151,3 +151,6 @@ footer {
     display: block;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
