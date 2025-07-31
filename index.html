@@ -2,77 +2,83 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Nassima Oukhelifa - Consultante Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nassima Oukhelifa - Portfolio Data</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Nassima Oukhelifa</h1>
-    <p>Consultante Data | Cheffe de Projet BI</p>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Nassima Oukhelifa</h1>
+      <p>Consultante Data | Power BI | Storytelling Visuel | Analyse Financière</p>
+    </div>
   </header>
 
-  <nav>
+  <nav class="navbar">
     <a href="#profil">Profil</a>
-    <a href="#experience">Expérience</a>
+    <a href="#experiences">Expériences</a>
     <a href="#competences">Compétences</a>
-    <a href="#formation">Formation</a>
+    <a href="#formations">Formations</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="profil">
-    <h2>À propos</h2>
-    <p>Passionnée par la donnée et forte d’une solide expérience en finance, en pilotage de projets BI et en analyse opérationnelle, j’accompagne les métiers dans leurs enjeux de transformation en concevant des tableaux de bord automatisés, en structurant les indicateurs clés de performance, et en assurant une conduite du changement centrée sur l’usage et la valorisation des données.</p>
-  </section>
+  <main>
+    <section id="profil" class="section">
+      <h2>À propos</h2>
+      <p>Passionnée par la donnée et forte d’une solide expérience en finance et en BI, je conçois des tableaux de bord interactifs, j’accompagne les projets de transformation numérique et je mets en valeur la donnée grâce à la visualisation et au storytelling.</p>
+    </section>
 
-  <section id="experience">
-    <h2>Expérience</h2>
-    <h3>Idex (2024 - 2025) – Cheffe de Projet Data / PMO / AMOA</h3>
-    <p>Pilotage de projets BI/Data, gouvernance, animation d’ateliers, accompagnement des utilisateurs.</p>
+    <section id="experiences" class="section">
+      <h2>Expériences Récentes</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Idex (2024 - 2025)</h3>
+          <p>Cheffe de Projet Data : coordination BI, animation d’ateliers, reporting KPI.</p>
+        </div>
+        <div class="card">
+          <h3>AKR / Akkodis (2023 - 2024)</h3>
+          <p>Conception de dashboards Power BI, storytelling RSE, automatisation via Azure DevOps.</p>
+        </div>
+        <div class="card">
+          <h3>Mydral (2023)</h3>
+          <p>Consultante BI : Fiabilisation de dashboards Tableau, accompagnement métier, formation.</p>
+        </div>
+      </div>
+    </section>
 
-    <h3>AKR (2023 - 2024) – Cheffe de Projet Data</h3>
-    <p>POC Impact Carbone, MégaDashboard Power BI, data storytelling, automatisation via Azure DevOps.</p>
+    <section id="competences" class="section dark">
+      <h2>Compétences Clés</h2>
+      <ul class="skills">
+        <li><strong>BI</strong> : Power BI, Tableau, DAX, Data Storytelling</li>
+        <li><strong>Data</strong> : SQL, Python, Azure, Snowflake</li>
+        <li><strong>Gestion</strong> : AMOA, Scrum, Pilotage projet</li>
+        <li><strong>Finance</strong> : Reporting, budget, prévision</li>
+        <li><strong>Langues</strong> : Français, Arabe (bilingue), Anglais (intermédiaire)</li>
+      </ul>
+    </section>
 
-    <h3>Mydral (2023) – Business Analyste Data</h3>
-    <p>Fiabilisation de dashboards Tableau, formation utilisateurs, accompagnement au changement.</p>
+    <section id="formations" class="section">
+      <h2>Formations & Certifications</h2>
+      <ul>
+        <li>2024 – AWS Data Engineer – Datacamp</li>
+        <li>2023 – KNIME L1 & L2</li>
+        <li>2022 – Master Méga Données – CNAM</li>
+        <li>2017 – Licence Gestion Comptable – CNAM</li>
+        <li>2010 – Maîtrise Finance – Université Abderrahmane Mira</li>
+      </ul>
+    </section>
 
-    <h3>Infopro Digital (2022 - 2023) – Cheffe de Projet Data</h3>
-    <p>Reporting HSE, migration Tableau, gestion des incidents et suivi KPI projets internes.</p>
-
-    <h3>Hachette Livre (2021 - 2022) – Data Analyst</h3>
-    <p>Migration de données, reporting financier Power BI, support utilisateurs ERP Dynamics 365.</p>
-  </section>
-
-  <section id="competences">
-    <h2>Compétences</h2>
-    <ul>
-      <li><strong>BI & Visualisation</strong> : Power BI, Tableau, Tableau Prep, Qlik</li>
-      <li><strong>Langages</strong> : SQL (PostgreSQL, SQL Server), DAX, Python, R</li>
-      <li><strong>Plateformes</strong> : Azure Databricks, Snowflake, Dynamics 365</li>
-      <li><strong>Gestion de projet</strong> : AMOA, Scrum, animation d’ateliers, support utilisateurs</li>
-      <li><strong>Finance</strong> : Reporting budgétaire, contrôle de gestion, comptabilité analytique</li>
-    </ul>
-  </section>
-
-  <section id="formation">
-    <h2>Formations & Certifications</h2>
-    <ul>
-      <li>2024 – AWS Certified Data Engineer – Associate – Datacamp</li>
-      <li>2023 – KNIME L1 & L2 – KNIME</li>
-      <li>2022 – Master Méga Données & Analyse Sociale – CNAM</li>
-      <li>2017 – Licence Gestion Comptable & Financière – CNAM</li>
-      <li>2010 – Maîtrise Sciences Commerciales, option Finance – Université Abderrahmane Mira (Algérie)</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:nassima.oukhelifa@example.com">nassima.oukhelifa@example.com</a></p>
-    <p>LinkedIn : <a href="https://www.linkedin.com/in/nassimaoukhelifa">linkedin.com/in/nassimaoukhelifa</a></p>
-    <p><a href="cv.pdf" download>Télécharger mon CV (PDF)</a></p>
-  </section>
+    <section id="contact" class="section dark">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:nassima.oukhelifa@example.com">nassima.oukhelifa@example.com</a></p>
+      <p>LinkedIn : <a href="https://www.linkedin.com/in/nassimaoukhelifa">linkedin.com/in/nassimaoukhelifa</a></p>
+      <p><a href="cv.pdf" download>Télécharger mon CV en PDF</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 – Nassima Oukhelifa | Consultante Data</p>
+    <p>&copy; 2025 Nassima Oukhelifa – Portfolio Data & BI</p>
   </footer>
 </body>
 </html>
